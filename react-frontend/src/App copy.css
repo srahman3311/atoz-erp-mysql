@@ -1,0 +1,639 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shippori Mincho', serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+#root {
+    min-height: 100%;
+}
+
+
+/* Container has two children, navbar and content */
+.container {
+    min-height: 100%;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    background-color: #11698e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 7%;
+    z-index: 1;
+}
+
+/* content has two children, sidenav & main-content */
+.content {
+    position: absolute;
+    width: 100%;
+    min-height: 92%;
+    top: 8%;
+    left: 0;
+    display: flex;
+}
+
+
+.main-content {
+    flex: 85%;
+    min-height: 100%;
+    padding: 0 1%;
+}
+
+.sidenav {
+    min-height: 100%;
+    flex: 15%;
+    background-color: #30475ec9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1%;
+}
+
+
+
+/* Navigation Bar */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.routes a {
+    padding: 10px 40px;
+}
+
+/* Brand Name Font Size */
+#brand {
+    font-size: 1.6rem;
+}
+
+.navbar a:hover {
+    color: #ff7b54;
+}
+
+/** Navbar Profile Display **/
+#navbar-profile-button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#navbar-profile-button img {
+    vertical-align: bottom; /* Removing space from the bottom of the image */
+}
+
+.navbar-profile {
+    width: 100px;
+    position: absolute;
+    right: 5%;
+    top: 100%;
+    background-color:#ccf2f4;
+    text-align: center;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.navbar-profile a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px;
+    transition: 1s;
+    font-size: 1rem;
+}
+
+.navbar-profile a:hover {
+    background-color: #1687a7;
+    color: white;
+}
+
+
+
+
+
+
+/* Side Navigation */
+.sidenav a {
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.8s;
+}
+
+.sidenav a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#submenu {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.sidenav-menu {
+    width: 100%;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+
+.sidenav-menu a {
+    width: 100%;
+    display: block;
+    padding-left: 50px;
+}
+
+.show {
+    transform: translateY(0%);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.show a {
+    display: block;
+    width: 100%;
+}
+
+i {
+    margin-right: 15px;
+}
+
+
+/*
+
+.content {
+    min-height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 8%;
+    background-color: #11698e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 7%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: #ff7b54;
+}
+
+.brand {
+    flex: 90%;
+    
+}
+
+#brand {
+    font-size: 2rem;
+}
+
+.profile-logout {
+    flex: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content {
+    position: absolute;
+    width: 100%;
+    min-height: 92%;
+    top: 8%;
+    left: 0;
+    display: flex;
+}
+
+.side-navigation {
+    min-height: 100%;
+    flex: 15%;
+    background-color: #30475ec9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1%;
+}
+
+.side-navigation a {
+    width: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.8s;
+}
+
+.side-navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#submenu {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.sidenav-menu {
+    width: 100%;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+
+.sidenav-menu a {
+    width: 100%;
+    display: block;
+    padding-left: 50px;
+}
+
+.show {
+    transform: translateY(0%);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.show a {
+    display: block;
+    width: 100%;
+}
+
+
+i {
+    margin-right: 15px;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Table Styling */
+
+.content-table {
+    height: 540px;
+    overflow: scroll;    
+}
+
+.content-table table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgba(221, 221, 221, 0.062);  
+}
+
+.content-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.content-table table td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 6.5px 5px;
+    font-size: 0.8rem;
+}
+
+table thead tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+}
+
+.content-table table thead tr th {
+    background-color: #d3e0ea;
+    color: black;
+    padding: 8.5px 5px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    position: -webkit-sticky; /* this is for all Safari (Desktop & iOS), not for Chrome*/
+    position: sticky;
+    top: -0.20%;
+    z-index: 1;
+    /*background: #fff;*/
+}
+
+/* When there is no data in the table */
+.no-data-td {
+    font-size: 3rem;
+    height: 540px;
+}
+
+
+/* Action td styling */
+.action-td {
+    position: relative;
+}
+
+.action-list {
+    width: 100%;
+    position: absolute;
+    padding: 5%;
+    top: 85%;
+    left: 0;
+    background-color: #09015fc0;
+    z-index: 5;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.edit-delete-button {
+    width: 90%;
+    background: none;
+    background-color: rgba(255, 255, 255, 0.897);
+    outline: none;
+    border: none;
+    margin-bottom: 5%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.edit-delete-button:hover {
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Table Header Div */
+
+
+
+/* Add New Jobs etc button */
+.add-button {
+    border: none;
+    background-color: #1687a7;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.add-button:hover, .modal-button button:hover {
+    background-color: #ff8d7180;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+
+/* Modal Displayer Button */
+.modal-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-button button {
+    border: none;
+    background-color: #153e90;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+
+
+
+/* Database Records && Next Previous Buttons */
+
+.items-view {
+    width: 100%;
+    background-color: #383e56ad;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0.3% 1%;
+    color: white;
+    margin-top: 0.3%;
+    font-size: 1.1rem;
+}
+
+
+.next-prev button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 2px 10px;
+    cursor: pointer;
+    color:#161d6f;
+    transition: 0.5s;
+    border-radius: 4px;
+    margin: 0 4px;
+    text-align: center;
+    transition: 0.8s;
+    z-index: 1;
+}
+
+.next-prev button:hover {
+    background-color: rgba(0, 0, 255, 0.438);
+    color: white;
+}
+
+i {
+    z-index: -1;
+}
+
+
+
+
+/* All Button Common Styling */
+/*
+button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    border-radius: 4px;
+    text-align: center;
+    color: black;
+    transition: 0.8s;
+}
+*/
+
+
+/* Common Components Styling */
+
+.content-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+    width: 100%;
+    padding: 0.4% 1%;
+}
+
+.content-search-export {
+    display: flex;
+    padding: 0.4% 2%;
+    align-items: center;
+}
+
+.content-search-export > div {
+    flex: 33.33%;
+}
+
+.view-limit-search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.view-limit-search > div {
+    width: 50%;
+}
+
+.view-limit-search select {
+    padding: 2px;
+    font-size: 1rem;
+}
+
+.view-limit-search input[type=text] {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+    padding: 5px 0px;
+    font-size: 1rem;
+}
+
+.view-limit-search input[type=text]:focus {
+    outline: none;
+}
+
+.exports {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.exports a {
+    text-decoration: none;
+    color: black;
+}
+
+.export-button {
+    padding: 2%;
+    margin: 2%;
+    border: none;
+    background-color: #99a8b2;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Modal Displayer Button */
+.add-data-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.action-button {
+    border: none;
+    background-color: #a1cae2;
+    padding: 0px 5px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.644);
+    transition: 0.5s;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Delete Modal */
+/* Modal */
+.delete-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    opacity: 0.9;
+}
+
+.delete-modal-content {
+    background-color: #f9f3f3;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2% 3%;
+    border-radius: 4px;
+    color: red;
+    text-align: center;
+    z-index: 6;
+}
+
+.delete-modal-buttons button {
+    margin: 5%;
+}
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+#report-routes-displayer {
+    background: none;
+    width: 100%;
+    /* background-color: red; */
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+#report-routes-displayer:hover {
+    color: white;
+    background-color: black;
+}
+
+#report-routes a {
+    /* background-color: blue; */
+    padding-left: 40px;
+    font-size: 0.9rem;
+}
+
+#report-routes a:hover {
+    background-color: burlywood;
+    color: black;
+}
+

@@ -1,0 +1,746 @@
+/* div#user-info {
+    padding: 0%;
+    background-color: rgba(169, 169, 169, 0.678);
+}
+
+.user-info {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.user-info > div {
+    width: 50%;
+    padding: 2% 5%;
+} */
+
+/* .image-uploader {
+    width: 40%;
+}
+
+.user-inputs {
+    width: 60%;
+} */
+
+/* Image Uploader Div */
+/*
+.upload-container {
+    width: 100%;
+    height: 100%;
+    padding: 20% 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.918);
+}
+
+.image-preview {
+    border-radius: 4px;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 20px;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 50%;
+}
+
+
+.image-file-input {
+    width: 100%;
+    height: 5%;
+    position: relative;
+    padding: 5% 10%;
+}
+
+.image-file-input input[type=file] {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; /* z-index will move the input element to the top of other element and opacity 0 will make it invisible */
+    /*opacity: 0; /* Opacity is the trum card here. Opacity zero will render the input element invisible */
+    /*border: 1px solid red;
+    padding: 5% 10%;
+}
+
+.image-filename {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 0.9rem;
+    
+}
+
+.image-upload-button {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 70%;
+    top: 0;
+    border: 1px solid black;
+    padding: 5px;
+    background-color:#28527a;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    border-left: none;
+    font-size: 0.9rem;
+    
+}
+
+/* User Inputs Div */
+
+/* .user-inputs {
+    padding: 20% 5%;
+} */
+
+/* .user-inputs-container {
+    background-color: rgba(255, 255, 255, 0.918);
+    width: 100%;
+    height: 100%;
+    padding: 2% 5%;
+} */
+
+/* .user-input input[type=text], .user-input input[type=password] {
+    background-color: rgba(0, 0, 0, 0.288);
+    margin-bottom: 5px;
+} */
+
+/* .user-input select {
+    width: 100%;
+    padding: 1.8%;
+    margin-bottom: 5px;
+    color: white;
+    background-color: #0457628c;
+    font-size: 1rem;
+} */
+
+/* .user-add-button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.user-add-button button {
+    width: 100%;
+    padding: 2% 1%;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #28527a;
+    color: white;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.user, .user-add {
+    height: 100%;
+    position: relative;
+}
+
+.user-data, .user-add-form {
+    width: 80%;
+    height: 93%;
+    position: absolute;
+    left: 20%;
+    top: 7%;
+    padding: 2%;
+}
+
+*/
+/* .user-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} */
+
+/* .user-data {
+    background-color: rgba(0, 0, 0, 0.541);
+} */
+
+/* .user-data-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.664);
+    padding-bottom: 5px;
+    
+} */
+
+/*
+div#user-info {
+    padding: 0%;
+}
+
+.user-info {
+    display: flex;
+    min-height: 100%;
+    background-color: darkgray;
+}
+
+.image-uploader {
+    flex: 20%;
+    padding: 1% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 5%; */
+    /*
+    min-height: 100%;
+}
+
+.user-inputs {
+    flex: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-inputs > div {
+    width: 50%;
+}
+
+
+
+/** Input[type=file] styling **/
+/* .image-uploader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/*
+.upload-container {
+    width: 100%;
+    height: 50%;
+}
+
+
+.image-preview {
+    width: 100%;
+    padding: 1% 0%;
+    height: 95%;
+    margin-bottom: 5%;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.image-file-input {
+    width: 100%;
+    height: 5%;
+    position: relative;
+    padding: 5% 10%;
+}
+
+.image-file-input input[type=file] {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; /* z-index will move the input element to the top of other element and opacity 0 will make it invisible */
+    /*opacity: 0; *//* Opacity is the trum card here. Opacity zero will render the input element invisible */
+    /*
+    border: 1px solid red;
+    padding: 5% 10%;
+}
+
+.image-filename {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+.image-upload-button {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 70%;
+    top: 0;
+    border: 1px solid black;
+    /*line-height: 30px; */
+    /*
+    padding: 5px;
+    background-color: blue;
+    vertical-align: middle;
+    text-align: center;
+    border-left: none;
+    font-size: 0.9rem;
+    
+/*
+
+/* 
+.user-input {
+    padding: 2%;
+}
+.user-input select {
+    width: 100%;
+    padding: 1.7% 5%;
+    border-radius: 2px;
+}
+ */
+
+
+
+ /* Modal */
+ /*
+.user-modal {
+    background-color: rgba(0, 0, 0, 0.938);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.96;
+}
+
+button#close-modal {
+    background: none;
+    color: rgba(255, 255, 255, 0.644);
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 97%;
+    top: 1%;
+}
+
+.user-modal-content {
+    background-color: #1f6f8b;
+    width: 75%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5%;
+    border-radius: 4px;
+}
+
+/* Modal Content Children */
+/*
+.user-info-wrapper {
+    width: 100%;
+    height: 95%;
+    display: flex;
+}
+
+.user-button {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* User Info Children */
+/*
+.user-info-wrapper > div {
+    padding: 0% 2%;
+    height: 100%;
+    width: 50%;
+}
+
+.user-info-wrapper h3 {
+    margin-bottom: 5px;
+    padding: 5px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+} 
+
+.image-uploader, .other-info-container, .basic-info-container {
+    padding: 2% 3%;
+}
+
+.image-uploader {
+    height: 100%;
+}
+
+.other-info-container {
+    height: 60%;
+}
+
+.basic-info-container {
+    height: 40%;
+}
+
+.upload-container, .other-info, .basic-info {
+    overflow: auto;
+    border-radius: 4px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 1% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.upload-header {
+    width: 100%;
+    height: 10%;
+}
+
+.upload-content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-preview {
+    width: 90%;
+    padding: 1% 0%;
+    height: 90%;
+    margin-bottom: 5%;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 50%;
+}
+
+.image-file-input {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    padding: 5% 10%;
+}
+
+.image-file-input input[type=file] {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; /* z-index will move the input element to the top of other element and opacity 0 will make it invisible */
+    /*opacity: 0; /* Opacity is the trum card here. Opacity zero will render the input element invisible */
+    /*border: 1px solid red;
+    padding: 5% 10%;
+}
+/*
+.image-filename {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 50%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.image-upload-button {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    left: 70%;
+    top: 0;
+    border: 1px solid black;
+    background-color: #ffcda3;
+    vertical-align: middle;
+    text-align: center;
+    border-left: none;
+    font-size: 0.9rem;
+}
+
+
+.user-button button {
+    width: 30%;
+    border: none;
+    background-color: navajowhite;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.user-modal label {
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    color: black;
+}
+
+.user-input input[type=text], .user-input input[type=password], .user-input select {
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 3px;
+    width: 100%;
+    background-color: #e6e6e6;
+    
+} 
+
+.user-input input[type=text]:focus, .user-input input[type=password]:focus {
+    outline: none;
+}
+
+*/
+
+
+
+
+
+
+
+/*
+.user-modal-content {
+    background-color: #e9896a;
+    width: 80%;
+    height: 97%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5% 2%;
+    border-radius: 4px;
+    overflow: auto;
+}
+*/
+
+.user-info {
+    width: 100%;
+    height: 95%;
+    display: flex;
+}
+
+.user-info h3 {
+    margin-bottom: 10px;
+    padding: 5px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+} 
+
+.image-and-basic, .other-info-container {
+    height: 100%;
+    padding: 10px;
+} 
+
+.image-and-basic {
+    width: 40%;
+}
+
+.other-info-container {
+    width: 60%;
+}
+
+.other-info {
+    background-color: #f3bda1;
+}
+
+.user-image {
+    padding-bottom: 5%;
+    height: 55%;
+}
+
+.basic-info-container {
+    height: 45%;
+    
+}
+
+.basic-info {
+    background-color: #f3bda1;
+}
+
+
+.image-uploader, .basic-info, .other-info {
+    background-color: white;
+    height: 100%;
+    padding: 5px 20px;
+    overflow: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.418), 0 6px 20px 0 rgba(0, 0, 0, 0.466);
+}
+
+.user-button {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-container {
+    height: 100%;
+    width: 100%;
+}
+
+/* .upload-header {
+    width: 100%;
+    height: 15%;
+} */
+
+.upload-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.image-preview {
+    width: 100%;
+    padding: 7% 12%;
+    height: 90%;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.image-file-input {
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+.image-file-input input[type=file] {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1; /* z-index will move the input element to the top of other element and opacity 0 will make it invisible */
+    opacity: 0; /* Opacity is the trum card here. Opacity zero will render the input element invisible */
+    border: 1px solid red;
+}
+
+.image-filename, .image-upload-button {
+    font-size: 0.7rem;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.image-filename {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.image-upload-button {
+    position: absolute;
+    width: 25%;
+    left: 75%;
+    top: 0;
+    background-color: #046582;
+    color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+.user-button button {
+    width: 30%;
+    border: none;
+    background-color: #046582;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.user-button button:hover {
+    background-color: #ebd8b7;
+    color: black;
+}
+
+.user-modal label {
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    color: black;
+}
+
+.user-input {
+    margin-bottom: 12px;
+}
+
+.user-input input[type=text], .user-input input[type=password], .user-input select {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    background-color: #e6e6e6;
+    
+} 
+
+.user-input input[type=text]:focus, .user-input input[type=password]:focus {
+    outline: none;
+}

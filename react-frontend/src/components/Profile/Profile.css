@@ -1,0 +1,762 @@
+.user-profile, .user-modal-content {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile h2, .user-modal-content h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.user-profile button, .user-modal-content button {
+    background-color:#02475ece;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.685);
+    transition: 0.8s;
+    font-weight: bold;
+    padding: 3px 15px 6px 15px;
+    letter-spacing: 4px;
+}
+
+.user-profile button:hover, .user-modal-content button:hover {
+    background-color: #EABF9F;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: bold;
+}
+
+.profile-container {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    position: relative; /* To position the edit button */
+}
+
+.profile-container > div {
+    padding: 1% 2%;
+}
+
+button#profile-edit-button {
+    position: absolute;
+    right: 1%;
+    bottom: 2%;
+}
+
+
+
+
+
+.profile-picture {
+    width: 35%;
+    min-height: 100%;
+    position: relative;
+    background-color: #02475e98;
+}
+
+.profile-picture img {
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.user-details {
+    min-height: 100%;
+    width: 65%;
+    background-color: #02475e6e;
+
+}
+
+#user-info-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgba(221, 221, 221, 0.062); 
+}
+
+#user-info-table td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+    padding: 1.5% 2%;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.788);
+    
+}
+
+#user-info-table tr:nth-child(even){background-color:#e7d4b556;}
+
+
+
+
+
+
+/* Edit Mode */
+.edit-mode, .user-modal-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+}
+
+.edit-mode > div {
+    padding: 5px 20px;
+}
+
+.edit-mode h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    padding-bottom: 5px;
+}
+
+.profile-pic-edit {
+    width: 35%;
+    height: 100%;
+    background-color: #02475e98;
+    position: relative;
+}
+
+.pic-preview {
+    width: 85%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.pic-file-input {
+    width: 85%;
+    height: 10%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.pic-file-input input[type=file] {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1; /* z-index will move the input element to the top of other element and opacity 0 will make it invisible */
+    opacity: 0; /* Opacity is the trum card here. Opacity zero will render the input element invisible */
+    border: 1px solid red;
+}
+
+.pic-filename, .pic-upload-button {
+    font-size: 0.8rem;
+    height: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+
+}
+
+.pic-filename {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 0.9rem;
+    overflow: hidden;
+}
+
+.pic-upload-button {
+    position: absolute;
+    width: 25%;
+    left: 75%;
+    top: 0;
+    background-color:#02475ece;
+    color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 0.9rem;
+}
+
+.pic-preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.user-details-edit {
+    width: 65%;
+    height: 100%;
+    background-color: #02475e6e;
+    /* background-color: #293b5fb2; */
+    position: relative;
+}
+
+.user-details-edit > div {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.general-info {
+   
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.username-info {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.password-info {
+    padding: 2%;
+}
+
+.password-message, .password-error-message {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0px 4px 4px 4px;
+    border-radius: 4px;
+}
+
+.password-message {
+    background-color: #2B4F60;
+}
+
+.password-error-message {
+    background-color: #7d5a50ab; 
+}
+
+.password-message p, .password-error-message p {
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+}
+
+.password-message p {
+    color: #FF9A8C;
+}
+
+.password-error-message p {
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.edit-mode-button {
+    position: absolute;
+    bottom: 1.2%;
+    left: -1%;
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+
+
+.user-text-input, .user-select-input, .user-password-input {
+    width: 50%;
+    padding: 5px 5% 10px 0px;
+}
+
+.user-text-input input[type=text], .user-password-input input[type=password], .user-select-input select {
+    width: 100%;
+    padding: 1%;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, select:focus {
+    outline: none;
+}
+
+label {
+    padding-bottom: 5px;
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    /* color: rgba(0, 0, 0, 0.575); */
+    color: rgba(255, 255, 255, 0.705);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #user-details-edit .modal-input {
+    padding: 10px;
+    margin: 0;
+}
+
+#user-details-edit label {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+    padding-bottom: 0;
+}
+
+#user-details-edit input[type=text] {
+    width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+.image-basic-info {
+    width: 40%;
+
+    background-color: wheat;
+}
+
+.profile-image {
+    width: 100%;
+}
+
+.profile-image img {
+    width: 100%;
+}
+
+.other-info {
+    width: 60%;
+    
+    background-color: violet;
+}
+
+*/
+
+
+/*
+.profile {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.profile-container {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    padding: 1% 2%;
+}
+
+.profile-container > div {
+    padding: 1% 2%;
+    min-height: 100%;
+}
+
+.profile-image-basic {
+    width: 35%;
+}
+
+.profile-other-info {
+    width: 65%;
+}
+
+.image-basic-wrapper, .other-info-wrapper {
+    border-radius: 4px;
+    min-height: 100%;
+    padding: 3% 8%;
+    background-color: rgba(255, 255, 255, 0.959);
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); */
+    /*
+}
+
+.image-basic-wrapper {
+    padding: 3% 8%;
+}
+
+.other-info-wrapper {
+    padding: 2% 7%;
+}
+
+.profile-image {
+    width: 100%;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    /* margin-top: auto; */
+    /*
+}
+
+.profile-image h2 {
+    padding-bottom: 2%;
+    margin-bottom: 7%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+}
+
+.other-info h2 {
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+}
+
+.basic-info h2 {
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+}
+
+.other-info-details {
+    margin-bottom: 5%;
+}
+
+.other-info-details h3 {
+    padding-bottom: 1%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.other-info-details p {
+    color: rgba(0, 0, 0, 0.644);
+}
+
+table#basic-info td {
+    padding: 0% 10%;
+}
+
+
+/* Profile Edit Button */
+/*
+.profile-edit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#profile-edit-button {
+    background-color: #ffcb91;
+    border: none;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.842);
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#profile-edit-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+#profile-edit-button:focus {
+    outline: none;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.media {
+    width: 100%;
+    position: relative;
+}
+
+.image-input {
+    position: relative;
+    width: 40%;
+    /*align-items: stretch;*/ /** Default. Items are stretched to fit the container **/
+    /*
+}
+.image-input input[type=file] {
+    /*overflow: visible;*/
+    /*
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 2.25003rem;
+    border: 0;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+}
+
+.filename {
+    color: #999;
+    padding: .4375rem .875rem;
+    /*
+    -ms-flex: 1;
+    flex: 1;
+    */
+    /*
+    width: 90%;
+    position: absolute;
+    left: 0;
+    top:0;
+    border: 1px solid #ddd;
+    border-right: 0;
+    background-color: #fff;
+    text-align: left;
+    word-break: break-word;
+    border-top-left-radius: .1875rem;
+    border-bottom-left-radius: .1875rem;
+}
+
+.action {
+    z-index: 1;
+    border-radius: 0;
+    border-top-right-radius: .1875rem;
+    border-bottom-right-radius: .1875rem;
+    background-color: #ec407a;
+    /*
+    position: relative;
+    display: inline-block;
+    */
+    /*
+    position: absolute;
+    left: 90%;
+    top: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .4375rem .875rem;
+    font-size: .8125rem;
+    line-height: 1.5385;
+}
+
+
+*/
+
+
+
+/*
+
+
+.profile {
+    height: 100%;
+    position: relative;
+}
+
+.profile-image {
+    border-radius: 50%;
+}
+
+.profile-details, .profile-edit {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    left: 20%;
+    top: 7%;
+    padding: 2%;
+    background-color: blueviolet;
+}
+
+.profile-settings {
+    width: 80%;
+    height: 3%;
+    position: absolute;
+    left: 20%;
+    top: 97%;
+    padding: 2%;
+    background-color: blueviolet;
+}
+
+
+*/
+
+
+/*
+
+.profile-edit {
+    width: 100%;
+    height: 200px;
+    background-color: floralwhite;
+}
+
+.just-input {
+    width: 50%;
+    position: relative;
+    left: 0;
+    top: 50%;
+}
+
+.just-input input[type=file] {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; /* z-index will move the input element to the top of other element and opacity 0 will make it invisible */
+    /*opacity: 0;*/ /* Opacity is the trum card here. Opacity zero will render the input element invisible */
+    /*
+    border: 1px solid red;
+    line-height: 30px;
+}
+*/
+
+/*
+.input-body {
+    position: absolute;
+    left: 0;
+    width: 80%;
+    border: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    
+}
+
+.input-button {
+    position: absolute;
+    width: 20%;
+    left: 80%;
+    top: 0;
+    border: 1px solid black;
+    line-height: 30px;
+    padding: 5px;
+    background-color: blue;
+    vertical-align: middle;
+    text-align: center;
+    border-left: none;
+}
+
+
+.header {
+    position: relative;
+    top: 80%;
+    left: 0;
+}
+*/

@@ -1,0 +1,6 @@
+# node modules
+node-backend/node_modules
+react-frontend/node_modules
+
+# environment variable files
+node-backend/.env
